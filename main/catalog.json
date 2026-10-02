@@ -1,29 +1,37 @@
 {
-  "generatedAt": "2026-10-02T19:18:03.122Z",
+  "generatedAt": "2026-10-02T19:44:31.108Z",
   "categories": [
-    {
-      "slug": "science-fiction",
-      "name": "Science Fiction",
-      "icon": "rocket",
-      "accent": "#4a6fa5",
-      "description": "Futures, inventions and the consequences of discovery."
-    },
     {
       "slug": "gothic",
       "name": "Gothic",
       "icon": "ghost",
-      "accent": "#7a5aa5",
+      "accent": "#8a4a6a",
       "description": "Dread, the uncanny and the shadow of the past."
     },
     {
       "slug": "mystery",
       "name": "Mystery",
       "icon": "search",
-      "accent": "#8a6a2a",
+      "accent": "#5a6a8a",
       "description": "Detection, deduction and the puzzle of crime."
+    },
+    {
+      "slug": "science-fiction",
+      "name": "Science Fiction",
+      "icon": "rocket",
+      "accent": "#2f7d6b",
+      "description": "Futures, inventions and the consequences of discovery."
     }
   ],
   "writers": [
+    {
+      "slug": "arthur-conan-doyle",
+      "name": "Arthur Conan Doyle",
+      "country": "United Kingdom",
+      "era": "1859–1930",
+      "bio": "Physician and writer who created Sherlock Holmes.",
+      "accent": "#8a6a2a"
+    },
     {
       "slug": "h-g-wells",
       "name": "H. G. Wells",
@@ -39,14 +47,6 @@
       "era": "1797–1851",
       "bio": "Novelist, dramatist and essayist, best known for Frankenstein.",
       "accent": "#7a5aa5"
-    },
-    {
-      "slug": "arthur-conan-doyle",
-      "name": "Arthur Conan Doyle",
-      "country": "United Kingdom",
-      "era": "1859–1930",
-      "bio": "Physician and writer who created Sherlock Holmes.",
-      "accent": "#8a6a2a"
     }
   ],
   "collections": [
@@ -61,31 +61,39 @@
         "frankenstein",
         "sherlock-holmes"
       ]
+    },
+    {
+      "slug": "gothic",
+      "name": "Gothic",
+      "kind": "category",
+      "description": "Dread, the uncanny and the shadow of the past.",
+      "accent": "#8a4a6a",
+      "bookSlugs": [
+        "frankenstein"
+      ]
+    },
+    {
+      "slug": "mystery",
+      "name": "Mystery",
+      "kind": "category",
+      "description": "Detection, deduction and the puzzle of crime.",
+      "accent": "#5a6a8a",
+      "bookSlugs": [
+        "sherlock-holmes"
+      ]
+    },
+    {
+      "slug": "science-fiction",
+      "name": "Science Fiction",
+      "kind": "category",
+      "description": "Futures, inventions and the consequences of discovery.",
+      "accent": "#2f7d6b",
+      "bookSlugs": [
+        "the-time-machine"
+      ]
     }
   ],
   "books": [
-    {
-      "slug": "the-time-machine",
-      "title": "The Time Machine",
-      "subtitle": "An Invention",
-      "year": 1895,
-      "language": "en",
-      "writer": "h-g-wells",
-      "category": "science-fiction",
-      "object": "books/the-time-machine.pdf",
-      "sizeMb": 0.23,
-      "pageCount": 50,
-      "description": "A Victorian inventor travels to the year 802,701 and finds a world split between the gentle Eloi and the subterranean Morlocks. A founding text of science fiction.",
-      "tags": [
-        "classic",
-        "sci-fi",
-        "novella"
-      ],
-      "featured": true,
-      "rights": "Public domain",
-      "sha256": "c45e0e6e48751060777e1a9c45abaf1421c9a82a0251c5cfa75cbe03a02b3922",
-      "needsOcr": false
-    },
     {
       "slug": "frankenstein",
       "title": "Frankenstein",
@@ -128,6 +136,28 @@
       "featured": false,
       "rights": "Public domain",
       "sha256": "dabffd8de01bde7d25c7c7c75ec06365a9870af51ab4b0c4fa158716ad980994",
+      "needsOcr": false
+    },
+    {
+      "slug": "the-time-machine",
+      "title": "The Time Machine",
+      "subtitle": "An Invention",
+      "year": 1895,
+      "language": "en",
+      "writer": "h-g-wells",
+      "category": "science-fiction",
+      "object": "books/the-time-machine.pdf",
+      "sizeMb": 0.23,
+      "pageCount": 50,
+      "description": "A Victorian inventor travels to the year 802,701 and finds a world split between the gentle Eloi and the subterranean Morlocks. A founding text of science fiction.",
+      "tags": [
+        "classic",
+        "sci-fi",
+        "novella"
+      ],
+      "featured": true,
+      "rights": "Public domain",
+      "sha256": "c45e0e6e48751060777e1a9c45abaf1421c9a82a0251c5cfa75cbe03a02b3922",
       "needsOcr": false
     }
   ]

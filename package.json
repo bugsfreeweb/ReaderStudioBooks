@@ -1,0 +1,15 @@
+{
+  "name": "reader-studio-books",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A public-domain library for Reader Studio. Drop a PDF in books/ and the catalog builds itself.",
+  "scripts": {
+    "build": "node tools/build_catalog.mjs",
+    "check": "node tools/build_catalog.mjs --check",
+    "generate": "node tools/make-books.mjs"
+  },
+  "devDependencies": {
+    "pdfjs-dist": "^4.10.38"
+  }
+}

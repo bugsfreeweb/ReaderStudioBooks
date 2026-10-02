@@ -1,19 +1,19 @@
 /**
- * Builds the book PDFs and the node manifest for ReaderStudioBooks.
+ * Regenerates the sample book PDFs for ReaderStudioBooks.
  *
- *   node tools/make-books.mjs
+ *   node tools/make-books.mjs && node tools/build_catalog.mjs
  *
  * The source texts are public-domain works from Project Gutenberg. Only the
  * standard 14 PDF fonts are used, so no font needs embedding and the output is
  * reproducible. The Project Gutenberg header/footer boilerplate is removed; the
  * underlying text is public domain.
  *
- * The manifest is written to `main/catalog.json` because the desktop client
- * resolves a github node's manifest as `<branch>/catalog.json`. PDFs live under
- * `books/`, and each entry's `object` is the path from the repository root.
+ * This script writes the PDFs under `books/`, a curated `books/<slug>.meta.json`
+ * per title, and `tools/writers.json`. It deliberately does NOT write the
+ * catalog: `tools/build_catalog.mjs` owns `main/catalog.json` and rebuilds it
+ * from every PDF in `books/` (drop a file in and the index follows).
  */
 
-import { createHash } from "node:crypto";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -68,16 +68,6 @@ const WRITERS = {
   "mary-shelley": { name: "Mary Shelley", country: "United Kingdom", era: "1797–1851", bio: "Novelist, dramatist and essayist, best known for Frankenstein.", accent: "#7a5aa5" },
   "arthur-conan-doyle": { name: "Arthur Conan Doyle", country: "United Kingdom", era: "1859–1930", bio: "Physician and writer who created Sherlock Holmes.", accent: "#8a6a2a" },
 };
-
-const CATEGORIES = {
-  "science-fiction": { name: "Science Fiction", icon: "rocket", accent: "#4a6fa5", description: "Futures, inventions and the consequences of discovery." },
-  gothic: { name: "Gothic", icon: "ghost", accent: "#7a5aa5", description: "Dread, the uncanny and the shadow of the past." },
-  mystery: { name: "Mystery", icon: "search", accent: "#8a6a2a", description: "Detection, deduction and the puzzle of crime." },
-};
-
-const COLLECTIONS = [
-  { slug: "classics", name: "Classics", kind: "curated", description: "Public-domain works that shaped the modern novel.", accent: "#c9992f", bookSlugs: BOOKS.map((b) => b.slug) },
-];
 
 /* ----------------------------- PDF toolkit ------------------------------ */
 
@@ -292,8 +282,6 @@ async function fetchText(id) {
   return res.text();
 }
 
-const manifestBooks = [];
-
 mkdirSync(resolve(ROOT, "books"), { recursive: true });
 
 for (const book of BOOKS) {
@@ -304,38 +292,34 @@ for (const book of BOOKS) {
   const { pages, pageCount } = renderBook(book, paragraphs);
   const pdf = serialise(pages, book);
 
-  const object = `books/${book.slug}.pdf`;
-  writeFileSync(resolve(ROOT, object), pdf);
+  writeFileSync(resolve(ROOT, `books/${book.slug}.pdf`), pdf);
 
-  manifestBooks.push({
-    slug: book.slug,
-    title: book.title,
-    subtitle: book.subtitle,
-    year: book.year,
-    language: "en",
-    writer: book.writer,
-    category: book.category,
-    object,
-    sizeMb: Math.round((pdf.length / (1024 * 1024)) * 100) / 100,
-    pageCount,
-    description: book.description,
-    tags: book.tags,
-    featured: book.featured,
-    rights: "Public domain",
-    sha256: createHash("sha256").update(pdf).digest("hex"),
-    needsOcr: false,
-  });
+  // The sidecar is the override the catalog builder reads first: curation that
+  // is not carried in the PDF itself (genre, blurb, tags, rights).
+  writeFileSync(
+    resolve(ROOT, `books/${book.slug}.meta.json`),
+    JSON.stringify(
+      {
+        title: book.title,
+        subtitle: book.subtitle,
+        author: WRITERS[book.writer].name,
+        year: book.year,
+        language: "en",
+        category: book.category,
+        description: book.description,
+        tags: book.tags,
+        featured: book.featured,
+        rights: "Public domain",
+      },
+      null,
+      2,
+    ) + "\n",
+  );
+
   console.log(`${pageCount} pages, ${(pdf.length / 1024).toFixed(0)} KB`);
 }
 
-const manifest = {
-  generatedAt: new Date().toISOString(),
-  categories: Object.entries(CATEGORIES).map(([slug, c]) => ({ slug, ...c })),
-  writers: Object.entries(WRITERS).map(([slug, w]) => ({ slug, ...w })),
-  collections: COLLECTIONS,
-  books: manifestBooks,
-};
-
-mkdirSync(resolve(ROOT, "main"), { recursive: true });
-writeFileSync(resolve(ROOT, "main/catalog.json"), JSON.stringify(manifest, null, 2) + "\n");
-console.log(`  main/catalog.json  ${manifestBooks.length} titles`);
+// Author detail that cannot be read from a PDF, kept so a rebuild keeps it.
+writeFileSync(resolve(ROOT, "tools/writers.json"), JSON.stringify(WRITERS, null, 2) + "\n");
+console.log(`  tools/writers.json  ${Object.keys(WRITERS).length} writers`);
+console.log("  run: node tools/build_catalog.mjs");

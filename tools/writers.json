@@ -1,0 +1,23 @@
+{
+  "h-g-wells": {
+    "name": "H. G. Wells",
+    "country": "United Kingdom",
+    "era": "1866–1946",
+    "bio": "Novelist and social commentator, often called the father of science fiction.",
+    "accent": "#4a6fa5"
+  },
+  "mary-shelley": {
+    "name": "Mary Shelley",
+    "country": "United Kingdom",
+    "era": "1797–1851",
+    "bio": "Novelist, dramatist and essayist, best known for Frankenstein.",
+    "accent": "#7a5aa5"
+  },
+  "arthur-conan-doyle": {
+    "name": "Arthur Conan Doyle",
+    "country": "United Kingdom",
+    "era": "1859–1930",
+    "bio": "Physician and writer who created Sherlock Holmes.",
+    "accent": "#8a6a2a"
+  }
+}

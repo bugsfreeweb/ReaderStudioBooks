@@ -1,0 +1,134 @@
+{
+  "generatedAt": "2026-10-02T19:18:03.122Z",
+  "categories": [
+    {
+      "slug": "science-fiction",
+      "name": "Science Fiction",
+      "icon": "rocket",
+      "accent": "#4a6fa5",
+      "description": "Futures, inventions and the consequences of discovery."
+    },
+    {
+      "slug": "gothic",
+      "name": "Gothic",
+      "icon": "ghost",
+      "accent": "#7a5aa5",
+      "description": "Dread, the uncanny and the shadow of the past."
+    },
+    {
+      "slug": "mystery",
+      "name": "Mystery",
+      "icon": "search",
+      "accent": "#8a6a2a",
+      "description": "Detection, deduction and the puzzle of crime."
+    }
+  ],
+  "writers": [
+    {
+      "slug": "h-g-wells",
+      "name": "H. G. Wells",
+      "country": "United Kingdom",
+      "era": "1866–1946",
+      "bio": "Novelist and social commentator, often called the father of science fiction.",
+      "accent": "#4a6fa5"
+    },
+    {
+      "slug": "mary-shelley",
+      "name": "Mary Shelley",
+      "country": "United Kingdom",
+      "era": "1797–1851",
+      "bio": "Novelist, dramatist and essayist, best known for Frankenstein.",
+      "accent": "#7a5aa5"
+    },
+    {
+      "slug": "arthur-conan-doyle",
+      "name": "Arthur Conan Doyle",
+      "country": "United Kingdom",
+      "era": "1859–1930",
+      "bio": "Physician and writer who created Sherlock Holmes.",
+      "accent": "#8a6a2a"
+    }
+  ],
+  "collections": [
+    {
+      "slug": "classics",
+      "name": "Classics",
+      "kind": "curated",
+      "description": "Public-domain works that shaped the modern novel.",
+      "accent": "#c9992f",
+      "bookSlugs": [
+        "the-time-machine",
+        "frankenstein",
+        "sherlock-holmes"
+      ]
+    }
+  ],
+  "books": [
+    {
+      "slug": "the-time-machine",
+      "title": "The Time Machine",
+      "subtitle": "An Invention",
+      "year": 1895,
+      "language": "en",
+      "writer": "h-g-wells",
+      "category": "science-fiction",
+      "object": "books/the-time-machine.pdf",
+      "sizeMb": 0.23,
+      "pageCount": 50,
+      "description": "A Victorian inventor travels to the year 802,701 and finds a world split between the gentle Eloi and the subterranean Morlocks. A founding text of science fiction.",
+      "tags": [
+        "classic",
+        "sci-fi",
+        "novella"
+      ],
+      "featured": true,
+      "rights": "Public domain",
+      "sha256": "c45e0e6e48751060777e1a9c45abaf1421c9a82a0251c5cfa75cbe03a02b3922",
+      "needsOcr": false
+    },
+    {
+      "slug": "frankenstein",
+      "title": "Frankenstein",
+      "subtitle": "Or, The Modern Prometheus",
+      "year": 1818,
+      "language": "en",
+      "writer": "mary-shelley",
+      "category": "gothic",
+      "object": "books/frankenstein.pdf",
+      "sizeMb": 0.54,
+      "pageCount": 117,
+      "description": "Victor Frankenstein assembles a living creature and abandons it. Mary Shelley's novel is at once a gothic horror and a meditation on responsibility.",
+      "tags": [
+        "classic",
+        "gothic",
+        "horror"
+      ],
+      "featured": true,
+      "rights": "Public domain",
+      "sha256": "822037201f6fe03ac8c382841e39764701029d824002dbcade0272c3ec5eb9c0",
+      "needsOcr": false
+    },
+    {
+      "slug": "sherlock-holmes",
+      "title": "The Adventures of Sherlock Holmes",
+      "subtitle": "Twelve Stories",
+      "year": 1892,
+      "language": "en",
+      "writer": "arthur-conan-doyle",
+      "category": "mystery",
+      "object": "books/sherlock-holmes.pdf",
+      "sizeMb": 0.83,
+      "pageCount": 171,
+      "description": "Twelve cases that established the consulting detective as a fixture of fiction, narrated by his friend and chronicler Dr. John Watson.",
+      "tags": [
+        "classic",
+        "mystery",
+        "short-stories"
+      ],
+      "featured": false,
+      "rights": "Public domain",
+      "sha256": "dabffd8de01bde7d25c7c7c75ec06365a9870af51ab4b0c4fa158716ad980994",
+      "needsOcr": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Treat binary assets as binary: no end-of-line conversion, no text diffs.
+# Without this, a PDF that happens to contain no NUL byte is treated as text
+# and gets CRLF conversion on checkout, which corrupts it.
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary

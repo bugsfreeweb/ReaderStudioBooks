@@ -12,6 +12,7 @@ You do not type the index by hand. Drop a PDF into `books/`, push, and
 books/*.pdf              the books. adding one is all that is required
 books/<name>.meta.json   optional per-book override (curation the PDF cannot hold)
 tools/build_catalog.mjs  reads books/ and writes main/catalog.json
+tools/categories.env     category rules; add a category without touching code
 tools/make-books.mjs     regenerates the bundled public-domain PDFs
 tools/writers.json       author detail (country, era, bio) that PDFs do not carry
 tools/ol-cache.json      remembered Open Library lookups, so builds are repeatable
@@ -69,20 +70,37 @@ A genre is guessed from the subjects. Override it, or anything else, by adding
 }
 ```
 
-## Bundled titles
+## Categories
 
-| Title | Author | Year | Source |
-| --- | --- | --- | --- |
-| The Time Machine | H. G. Wells | 1895 | Project Gutenberg #35 |
-| Frankenstein | Mary Shelley | 1818 | Project Gutenberg #84 |
-| The Adventures of Sherlock Holmes | Arthur Conan Doyle | 1892 | Project Gutenberg #1661 |
+Categories are data, not code. They live in `tools/categories.env`, one line
+per category, applied in ascending number order:
 
-All three works are in the **public domain**. The Project Gutenberg
-header/footer boilerplate was removed and the text was reflowed into PDFs by
-`tools/make-books.mjs` (`npm run generate`). The underlying texts remain public
-domain; the typographic arrangement is released under the same terms as the
-repository.
+```
+CATEGORY_10=liberation-war|মুক্তিযুদ্ধ ১৯৭১|landmark|liberation war, muktijuddho, bangladesh, 1971|বাংলাদেশের মুক্তিযুদ্ধ নিয়ে লেখা বই।
+```
+
+Fields are `slug|name|icon|match keys|description`; only `slug` and `name` are
+required. A book is filed under the first category whose `match keys` appear in
+its subjects or tags, so keep specific categories above broad ones. To pin a
+book explicitly, set `"category"` in its sidecar. The header of
+`tools/categories.env` documents every field, the available icons, and how to
+add a new category. Point the builder elsewhere with `CATALOG_CATEGORIES`.
+
+## Current library
+
+| Title | Author | Language |
+| --- | --- | --- |
+| ১৯৭১ | হুমায়ূন আহমেদ | Bengali |
+| ১৯৭১ ঘাতক-দালালদের বক্তৃতা ও বিবৃতি | সাইদুজ্জামান রওশন | Bengali |
+| ১৯৭১ ভেতরে বাইরে | এ কে খন্দকার | Bengali |
+
+These PDFs were supplied by the library operator. Copyright remains with the
+respective authors and publishers — they are **not** public-domain works. If
+you redistribute this repository you are responsible for having the rights to
+the files under `books/`.
 
 ## Licence
 
-Manifest, tooling and arrangement: MIT. Book texts: public domain.
+The manifest (`main/catalog.json`), the tooling under `tools/`, and the
+arrangement of this repository are MIT. The book files under `books/` are
+**not** covered by that licence.

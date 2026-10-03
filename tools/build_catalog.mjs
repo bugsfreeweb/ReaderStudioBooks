@@ -36,6 +36,9 @@ const BOOKS_DIR = join(ROOT, "books");
 const CATALOG_PATH = join(ROOT, "main", "catalog.json");
 const CACHE_PATH = join(HERE, "ol-cache.json");
 const WRITERS_PATH = join(HERE, "writers.json");
+const CATEGORIES_PATH = process.env.CATALOG_CATEGORIES
+  ? resolve(ROOT, process.env.CATALOG_CATEGORIES)
+  : join(HERE, "categories.env");
 const REBUILD = "node tools/build_catalog.mjs";
 
 const args = new Set(process.argv.slice(2));
@@ -95,11 +98,33 @@ function asString(value) {
 }
 
 const hashHex = (buf) => createHash("sha256").update(buf).digest("hex");
+const shortHash = (text) => hashHex(String(text)).slice(0, 8);
 const unique = (list) => [...new Set(list)];
+
+/**
+ * A stable key for grouping the same person or title regardless of script.
+ * `slugify` drops everything outside [a-z0-9], which collapses every Bengali
+ * name to the empty string - so identity comparisons use this instead.
+ */
+function nameKey(text) {
+  return String(text || "")
+    .normalize("NFKC")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+/** Keep non-Latin names verbatim; only force title case on ASCII names. */
+function displayName(text) {
+  const t = String(text || "").replace(/\s+/g, " ").trim();
+  return /[^\x00-\x7f]/.test(t) ? t : titleCase(t);
+}
 
 /* --------------------------- category mapping --------------------------- */
 
-const CATEGORY_RULES = [
+// Used only when tools/categories.env is missing or empty. The live list is
+// the env file so categories can be added without touching this script.
+const DEFAULT_CATEGORY_RULES = [
   { slug: "science-fiction", name: "Science Fiction", icon: "rocket", description: "Futures, inventions and the consequences of discovery.", keys: ["science fiction", "sci-fi", "sci fi", "space travel", "dystopia", "time travel", "space opera"] },
   { slug: "mystery", name: "Mystery", icon: "search", description: "Detection, deduction and the puzzle of crime.", keys: ["mystery", "detective", "crime", "murder", "sherlock"] },
   { slug: "gothic", name: "Gothic", icon: "ghost", description: "Dread, the uncanny and the shadow of the past.", keys: ["gothic", "horror", "ghost", "vampire"] },
@@ -109,12 +134,69 @@ const CATEGORY_RULES = [
   { slug: "poetry", name: "Poetry", icon: "feather", description: "Verse and lyric.", keys: ["poetry", "poems", "verse", "sonnet"] },
   { slug: "philosophy", name: "Philosophy", icon: "scale", description: "Arguments about meaning, mind and conduct.", keys: ["philosophy", "ethics", "logic", "metaphysics"] },
   { slug: "biography", name: "Biography", icon: "user-round", description: "Lives told whole.", keys: ["biography", "autobiography", "memoir", "diaries", "letters"] },
+  { slug: "liberation-war", name: "মুক্তিযুদ্ধ ১৯৭১", icon: "landmark", description: "বাংলাদেশের মুক্তিযুদ্ধ নিয়ে লেখা বই।", keys: ["liberation war", "muktijuddho", "bangladesh", "1971", "bangabandhu"] },
   { slug: "history", name: "History", icon: "landmark", description: "The documented past.", keys: ["history", "historical", "war", "civilisation", "civilization"] },
   { slug: "science", name: "Science", icon: "flask-conical", description: "Nature, experiment and explanation.", keys: ["science", "physics", "biology", "chemistry", "mathematics", "astronomy"] },
   { slug: "children", name: "Children", icon: "smile", description: "Stories written for young readers.", keys: ["children", "juvenile", "fairy tale", "nursery"] },
   { slug: "religion", name: "Religion", icon: "book", description: "Faith, scripture and reflection.", keys: ["religion", "bible", "christian", "islam", "quran", "spiritual"] },
   { slug: "fiction", name: "Fiction", icon: "book-open", description: "Novels and stories.", keys: ["fiction", "novel", "literature", "classic"] },
 ];
+
+const FALLBACK_ICON = "book";
+
+/**
+ * Parse tools/categories.env. One line per category:
+ *   CATEGORY_<n>=<slug>|<name>|<icon>|<match keys>|<description>
+ * Lines are applied in ascending numeric order, so specific categories can be
+ * listed above broad ones without renumbering.
+ */
+function parseCategories(text) {
+  const rules = [];
+  const seen = new Set();
+  for (const rawLine of text.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith("#")) continue;
+    const eq = line.indexOf("=");
+    if (eq === -1) continue;
+    const key = line.slice(0, eq).trim();
+    if (!/^CATEGORY_\d+$/i.test(key)) continue;
+    const fields = line.slice(eq + 1).split("|").map((v) => v.trim());
+    const [slug, name, icon, keys, description] = fields;
+    if (!slug || !name) {
+      throw new Error(`${relative(ROOT, CATEGORIES_PATH)}: ${key} needs a slug and a name`);
+    }
+    if (seen.has(slug)) {
+      throw new Error(`${relative(ROOT, CATEGORIES_PATH)}: duplicate category slug "${slug}"`);
+    }
+    seen.add(slug);
+    rules.push({
+      index: Number(key.replace(/^CATEGORY_/i, "")) || rules.length + 1,
+      slug: slugify(slug),
+      name,
+      icon: icon || FALLBACK_ICON,
+      description: description || "",
+      keys: keys ? keys.split(",").map((k) => k.trim()).filter(Boolean) : [],
+    });
+  }
+  return rules.sort((a, b) => a.index - b.index).map(({ index, ...rule }) => rule);
+}
+
+function loadCategories() {
+  const rel = relative(ROOT, CATEGORIES_PATH);
+  if (!existsSync(CATEGORIES_PATH)) {
+    log(`categories: no ${rel}; using built-in defaults`);
+    return DEFAULT_CATEGORY_RULES;
+  }
+  const rules = parseCategories(readFileSync(CATEGORIES_PATH, "utf8"));
+  if (!rules.length) {
+    log(`categories: ${rel} is empty; using built-in defaults`);
+    return DEFAULT_CATEGORY_RULES;
+  }
+  log(`categories: ${rules.length} loaded from ${rel}`);
+  return rules;
+}
+
+const CATEGORY_RULES = loadCategories();
 
 const ACCENTS = ["#4a6fa5", "#7a5aa5", "#8a6a2a", "#2f7d6b", "#a5504a", "#4a7d3f", "#8a4a6a", "#5a6a8a"];
 
@@ -234,7 +316,9 @@ async function getJson(url) {
  * the wrong date on a real book.
  */
 async function enrich(title, author) {
-  if (!ENRICH || !title) return {};
+  // Open Library only indexes Latin titles; skip the round-trip for scripts it
+  // cannot match (a Bengali title slugifies to "").
+  if (!ENRICH || !title || !slugify(title)) return {};
   const key = `${normal(title)}|${normal(author)}`;
   if (Object.prototype.hasOwnProperty.call(olCache, key)) return olCache[key];
 
@@ -310,7 +394,7 @@ function loadWriterOverrides() {
     for (const [key, w] of Object.entries(raw)) {
       const row = { slug: w.slug || key, ...w };
       bySlug.set(row.slug, row);
-      if (w.name) byName.set(normal(w.name), row);
+      if (w.name) byName.set(nameKey(w.name), row);
     }
     return { bySlug, byName };
   } catch {
@@ -333,6 +417,7 @@ async function main() {
   const priorWriterBySlug = new Map((current.writers || []).map((w) => [w.slug, w]));
 
   const writerSlugs = new Set();
+  const bookSlugs = new Set();
   const writerByName = new Map();
   const categories = new Map();
   const books = [];
@@ -346,7 +431,12 @@ async function main() {
     const pdf = await readPdf(file);
     const parsed = parseFilename(file);
 
-    const authorNames = splitAuthors([sidecar.writer?.name, sidecar.author, pdf.author, parsed.author, prior.writer?.name]);
+    // A sidecar author is authoritative: when present it fully replaces the
+    // PDF's own (often absent or garbled) author metadata.
+    const overrideAuthors = splitAuthors([sidecar.writer?.name, sidecar.author]);
+    const authorNames = overrideAuthors.length
+      ? overrideAuthors
+      : splitAuthors([pdf.author, parsed.author, prior.writer?.name]);
 
     const ol = await enrich(asString(sidecar.title) || pdf.title || parsed.title, authorNames[0]);
 
@@ -357,30 +447,42 @@ async function main() {
       CATEGORY_RULES.find((r) => r.slug === (sidecar.category || prior.category)) || categoryFor(subjects);
 
     // Writers are keyed by name so the same author keeps one slug across books.
+    // Bengali names slugify to "", so identity uses `nameKey` and the slug falls
+    // back to the writers.json override, then a stable hash.
     const writerRows = authorNames.map((raw) => {
-      const name = titleCase(raw);
-      const nameKey = normal(name);
-      let row = writerByName.get(nameKey);
+      const name = displayName(raw);
+      const key = nameKey(name);
+      let row = writerByName.get(key);
       if (!row) {
-        const priorRow = [...priorWriterBySlug.values()].find((w) => normal(w.name) === nameKey);
-        const slug = priorRow?.slug || uniqueSlug(slugify(name), writerSlugs);
-        const override = writerOverrides.bySlug.get(slug) || writerOverrides.byName.get(nameKey) || {};
+        const priorRow = [...priorWriterBySlug.values()].find((w) => nameKey(w.name) === key);
+        const override = writerOverrides.byName.get(key) || {};
+        // Precedence: explicit override, then a sane slug carried over from the
+        // previous catalog, then a derived slug. Degenerate fallbacks ("book",
+        // "unknown") from older builds are never reused.
+        const priorSlug = asString(priorRow?.slug);
+        const reusable = priorSlug && !["book", "unknown", "untitled"].includes(priorSlug) ? priorSlug : "";
+        const seed = slugify(asString(override.slug)) || reusable || slugify(name) || `writer-${shortHash(name)}`;
+        const slug = uniqueSlug(seed, writerSlugs);
+        const bySlug = writerOverrides.bySlug.get(slug) || override;
         row = {
           slug,
           name,
-          country: priorRow?.country || override.country || "",
-          era: priorRow?.era || override.era || "",
-          bio: priorRow?.bio || override.bio || "",
-          accent: priorRow?.accent || override.accent || accentFor(slug),
+          country: priorRow?.country || bySlug.country || "",
+          era: priorRow?.era || bySlug.era || "",
+          bio: priorRow?.bio || bySlug.bio || "",
+          accent: priorRow?.accent || bySlug.accent || accentFor(slug),
         };
-        writerByName.set(nameKey, row);
+        writerByName.set(key, row);
         writerSlugs.add(slug);
       }
       return row;
     });
 
+    const bookSeed =
+      slugify(asString(sidecar.slug) || asString(prior.slug)) || slugify(title) || `book-${shortHash(object)}`;
+
     books.push({
-      slug: slugify(sidecar.slug || prior.slug || title),
+      slug: uniqueSlug(bookSeed, bookSlugs),
       title,
       subtitle: asString(sidecar.subtitle) || asString(prior.subtitle) || "",
       year,

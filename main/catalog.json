@@ -1,71 +1,125 @@
 {
-  "generatedAt": "2026-10-03T17:14:03.541Z",
-  "categories": [],
+  "generatedAt": "2026-10-03T17:37:30.076Z",
+  "categories": [
+    {
+      "slug": "liberation-war",
+      "name": "মুক্তিযুদ্ধ ১৯৭১",
+      "icon": "landmark",
+      "accent": "#8a4a6a",
+      "description": "বাংলাদেশের মুক্তিযুদ্ধ নিয়ে লেখা বই।"
+    }
+  ],
   "writers": [
     {
-      "slug": "book",
+      "slug": "ak-khandakar",
       "name": "এ কে খন্দকার",
-      "country": "",
+      "country": "Bangladesh",
+      "era": "",
+      "bio": "1971 sector commander and author of the memoir 1971: Inside and Outside.",
+      "accent": "#7a5aa5"
+    },
+    {
+      "slug": "saiduzzaman-raushan",
+      "name": "সাইদুজ্জামান রওশন",
+      "country": "Bangladesh",
       "era": "",
       "bio": "",
       "accent": "#7a5aa5"
+    },
+    {
+      "slug": "humayun-ahmed",
+      "name": "হুমায়ূন আহমেদ",
+      "country": "Bangladesh",
+      "era": "1948–2012",
+      "bio": "Author and filmmaker, one of the most popular writers of modern Bengali fiction.",
+      "accent": "#2f7d6b"
     }
   ],
-  "collections": [],
+  "collections": [
+    {
+      "slug": "liberation-war",
+      "name": "মুক্তিযুদ্ধ ১৯৭১",
+      "kind": "category",
+      "description": "বাংলাদেশের মুক্তিযুদ্ধ নিয়ে লেখা বই।",
+      "accent": "#8a4a6a",
+      "bookSlugs": [
+        "1971-humayun-ahmed",
+        "1971-ghatak-dalal",
+        "1971-bhitore-baire"
+      ]
+    }
+  ],
   "books": [
     {
-      "slug": "",
-      "title": "১৯৭১ ঘাতক দালালদের বক্তৃতা ও বিবৃতি সাইদুজ্জামান রওশন",
+      "slug": "1971-humayun-ahmed",
+      "title": "১৯৭১",
       "subtitle": "",
       "year": 0,
-      "language": "en",
-      "writer": "unknown",
-      "category": null,
+      "language": "bn",
+      "writer": "humayun-ahmed",
+      "category": "liberation-war",
+      "object": "books/১৯৭১ - হুমায়ূন আহমেদ.pdf",
+      "sizeMb": 6.4,
+      "pageCount": 52,
+      "description": "হুমায়ূন আহমেদের উপন্যাস — মুক্তিযুদ্ধের সময়ের একটি পরিবারের গল্প।",
+      "tags": [
+        "bangla",
+        "fiction",
+        "1971",
+        "liberation-war"
+      ],
+      "featured": false,
+      "rights": "Personal library copy",
+      "sha256": "74108c9b898944ddfd0ade830fdbaadcd8c03067d3d4567840e8198bc03c5d37",
+      "needsOcr": false
+    },
+    {
+      "slug": "1971-ghatak-dalal",
+      "title": "১৯৭১ ঘাতক-দালালদের বক্তৃতা ও বিবৃতি",
+      "subtitle": "",
+      "year": 0,
+      "language": "bn",
+      "writer": "saiduzzaman-raushan",
+      "category": "liberation-war",
       "object": "books/১৯৭১ ঘাতক-দালালদের বক্তৃতা ও বিবৃতি - সাইদুজ্জামান রওশন.pdf",
       "sizeMb": 10.92,
       "pageCount": 60,
-      "description": "১৯৭১ ঘাতক দালালদের বক্তৃতা ও বিবৃতি সাইদুজ্জামান রওশন.",
-      "tags": [],
+      "description": "১৯৭১ সালের ঘাতক ও দালালদের বক্তৃতা ও বিবৃতির সংকলন।",
+      "tags": [
+        "bangla",
+        "1971",
+        "history",
+        "liberation-war",
+        "documents"
+      ],
       "featured": false,
-      "rights": "See source",
+      "rights": "Personal library copy",
       "sha256": "3fa6d1f3e34fd96c174c7eefa024c37e14b50be5005ec62c9a409705603abddb",
       "needsOcr": true
     },
     {
-      "slug": "",
+      "slug": "1971-bhitore-baire",
       "title": "১৯৭১ ভেতরে বাইরে",
       "subtitle": "",
       "year": 0,
-      "language": "en",
-      "writer": "book",
-      "category": null,
+      "language": "bn",
+      "writer": "ak-khandakar",
+      "category": "liberation-war",
       "object": "books/১৯৭১ ভেতরে বাইরে - এ কে খন্দকার.pdf",
       "sizeMb": 15.11,
       "pageCount": 234,
-      "description": "১৯৭১ ভেতরে বাইরে by এ কে খন্দকার.",
-      "tags": [],
+      "description": "মুক্তিযুদ্ধে একজন সেক্টর কমান্ডারের স্মৃতিচারণ ও বিশ্লেষণ।",
+      "tags": [
+        "bangla",
+        "1971",
+        "memoir",
+        "history",
+        "liberation-war"
+      ],
       "featured": false,
-      "rights": "See source",
+      "rights": "Personal library copy",
       "sha256": "0851db8f16fe302da6654d341116ccc2e38f54b7cf4e7821605dbd496f4fd85d",
       "needsOcr": true
-    },
-    {
-      "slug": "",
-      "title": "১৯৭১ হুমায়ূন আহমেদ",
-      "subtitle": "",
-      "year": 0,
-      "language": "en",
-      "writer": "unknown",
-      "category": null,
-      "object": "books/১৯৭১ - হুমায়ূন আহমেদ.pdf",
-      "sizeMb": 6.4,
-      "pageCount": 52,
-      "description": "১৯৭১ হুমায়ূন আহমেদ.",
-      "tags": [],
-      "featured": false,
-      "rights": "See source",
-      "sha256": "74108c9b898944ddfd0ade830fdbaadcd8c03067d3d4567840e8198bc03c5d37",
-      "needsOcr": false
     }
   ]
 }

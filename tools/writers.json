@@ -19,5 +19,29 @@
     "era": "1859–1930",
     "bio": "Physician and writer who created Sherlock Holmes.",
     "accent": "#8a6a2a"
+  },
+  "humayun-ahmed": {
+    "slug": "humayun-ahmed",
+    "name": "হুমায়ূন আহমেদ",
+    "country": "Bangladesh",
+    "era": "1948–2012",
+    "bio": "Author and filmmaker, one of the most popular writers of modern Bengali fiction.",
+    "accent": "#2f7d6b"
+  },
+  "saiduzzaman-raushan": {
+    "slug": "saiduzzaman-raushan",
+    "name": "সাইদুজ্জামান রওশন",
+    "country": "Bangladesh",
+    "era": "",
+    "bio": "",
+    "accent": "#7a5aa5"
+  },
+  "ak-khandakar": {
+    "slug": "ak-khandakar",
+    "name": "এ কে খন্দকার",
+    "country": "Bangladesh",
+    "era": "",
+    "bio": "1971 sector commander and author of the memoir 1971: Inside and Outside.",
+    "accent": "#a5504a"
   }
 }

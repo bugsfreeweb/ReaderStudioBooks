@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T19:44:31.108Z",
+  "generatedAt": "2026-10-03T17:12:41.735Z",
   "categories": [
     {
       "slug": "gothic",
@@ -46,6 +46,14 @@
       "country": "United Kingdom",
       "era": "1797–1851",
       "bio": "Novelist, dramatist and essayist, best known for Frankenstein.",
+      "accent": "#7a5aa5"
+    },
+    {
+      "slug": "book",
+      "name": "এ কে খন্দকার",
+      "country": "",
+      "era": "",
+      "bio": "",
       "accent": "#7a5aa5"
     }
   ],
@@ -94,6 +102,60 @@
     }
   ],
   "books": [
+    {
+      "slug": "",
+      "title": "১৯৭১ ঘাতক দালালদের বক্তৃতা ও বিবৃতি সাইদুজ্জামান রওশন",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/১৯৭১ ঘাতক-দালালদের বক্তৃতা ও বিবৃতি - সাইদুজ্জামান রওশন.pdf",
+      "sizeMb": 10.92,
+      "pageCount": 60,
+      "description": "১৯৭১ ঘাতক দালালদের বক্তৃতা ও বিবৃতি সাইদুজ্জামান রওশন.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "3fa6d1f3e34fd96c174c7eefa024c37e14b50be5005ec62c9a409705603abddb",
+      "needsOcr": true
+    },
+    {
+      "slug": "",
+      "title": "১৯৭১ ভেতরে বাইরে",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "book",
+      "category": null,
+      "object": "books/১৯৭১ ভেতরে বাইরে - এ কে খন্দকার.pdf",
+      "sizeMb": 15.11,
+      "pageCount": 234,
+      "description": "১৯৭১ ভেতরে বাইরে by এ কে খন্দকার.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "0851db8f16fe302da6654d341116ccc2e38f54b7cf4e7821605dbd496f4fd85d",
+      "needsOcr": true
+    },
+    {
+      "slug": "",
+      "title": "১৯৭১ হুমায়ূন আহমেদ",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/১৯৭১ - হুমায়ূন আহমেদ.pdf",
+      "sizeMb": 6.4,
+      "pageCount": 52,
+      "description": "১৯৭১ হুমায়ূন আহমেদ.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "74108c9b898944ddfd0ade830fdbaadcd8c03067d3d4567840e8198bc03c5d37",
+      "needsOcr": false
+    },
     {
       "slug": "frankenstein",
       "title": "Frankenstein",

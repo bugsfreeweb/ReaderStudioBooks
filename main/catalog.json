@@ -1,6 +1,13 @@
 {
-  "generatedAt": "2026-10-04T09:21:10.308Z",
+  "generatedAt": "2026-10-04T09:58:54.358Z",
   "categories": [
+    {
+      "slug": "history",
+      "name": "History",
+      "icon": "landmark",
+      "accent": "#a5504a",
+      "description": "The documented past."
+    },
     {
       "slug": "liberation-war",
       "name": "মুক্তিযুদ্ধ ১৯৭১",
@@ -11,12 +18,52 @@
   ],
   "writers": [
     {
+      "slug": "amarboi-com",
+      "name": "Amarboi.com",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#2f7d6b"
+    },
+    {
+      "slug": "ibne-batutar-safarnama-travels-of-ibn-batuta",
+      "name": "Ibne Batutar Safarnama || Travels of Ibn Batuta",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#4a7d3f"
+    },
+    {
       "slug": "rubel",
       "name": "Rubel",
       "country": "",
       "era": "",
       "bio": "",
       "accent": "#8a4a6a"
+    },
+    {
+      "slug": "www-banglabook-org",
+      "name": "Www.banglabook.org",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#2f7d6b"
+    },
+    {
+      "slug": "yasmin-khan",
+      "name": "Yasmin Khan",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#4a6fa5"
+    },
+    {
+      "slug": "yuval-noah-harari",
+      "name": "Yuval Noah Harari",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#a5504a"
     },
     {
       "slug": "writer-de00068f",
@@ -59,6 +106,14 @@
       "accent": "#8a6a2a"
     },
     {
+      "slug": "writer-ffb83375",
+      "name": "মেহেদী হাসান পলাশ",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#8a4a6a"
+    },
+    {
       "slug": "saiduzzaman-raushan",
       "name": "সাইদুজ্জামান রওশন",
       "country": "Bangladesh",
@@ -76,6 +131,16 @@
     }
   ],
   "collections": [
+    {
+      "slug": "history",
+      "name": "History",
+      "kind": "category",
+      "description": "The documented past.",
+      "accent": "#a5504a",
+      "bookSlugs": [
+        "the-great-partition"
+      ]
+    },
     {
       "slug": "liberation-war",
       "name": "মুক্তিযুদ্ধ ১৯৭১",
@@ -162,6 +227,26 @@
       "needsOcr": true
     },
     {
+      "slug": "ibne-batutar-safarnama-bengali-translation-travels-of-ibn-batuta",
+      "title": "Ibne Batutar Safarnama, Bengali Translation || Travels of Ibn Batuta",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "ibne-batutar-safarnama-travels-of-ibn-batuta",
+      "category": null,
+      "object": "books/ইবনে বতুতার সফরনামা.pdf",
+      "sizeMb": 7.12,
+      "pageCount": 283,
+      "description": "Ibne Batutar Safarnama, Bengali Translation || Travels of Ibn Batuta by Ibne Batutar Safarnama || Travels of Ibn Batuta.",
+      "tags": [
+        "ibne-batutar-safarnama-travels-of-ibn-batuta"
+      ],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "3dcabfd48e308e282b119549ac98c68addee7bee895b4b6de79522f8194aab7a",
+      "needsOcr": false
+    },
+    {
       "slug": "microsoft-word-23-years-ali-dashti-updated-2016-docx",
       "title": "Microsoft Word - 23 Years-ali-dashti-updated-2016.docx",
       "subtitle": "",
@@ -177,6 +262,282 @@
       "featured": false,
       "rights": "See source",
       "sha256": "921ec567da87e6b18c46e7d3feccd6251726b8bd0355339e79c55ff159fb630d",
+      "needsOcr": false
+    },
+    {
+      "slug": "nexus-a-brief-history-of-information-networks-from-the-stone-age-to-ai",
+      "title": "Nexus: a Brief History of Information Networks from the Stone Age to Ai",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "yuval-noah-harari",
+      "category": null,
+      "object": "books/Nexus A Brief History of Information Networks from the Stone Age to AI (Yuval Noah Harari).pdf",
+      "sizeMb": 5.23,
+      "pageCount": 592,
+      "description": "Nexus: a Brief History of Information Networks from the Stone Age to Ai by Yuval Noah Harari.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "7c14b93515c45cac068e7a4276b4f8737406a699731ff5d1d5798a63b0b39463",
+      "needsOcr": false
+    },
+    {
+      "slug": "the-great-partition",
+      "title": "The Great Partition",
+      "subtitle": "",
+      "year": 2007,
+      "language": "en",
+      "writer": "yasmin-khan",
+      "category": "history",
+      "object": "books/The Great Partition_The Making of India and Pakistan_Yaseem Khan.pdf",
+      "sizeMb": 3.2,
+      "pageCount": 210,
+      "description": "A history of the Partition of the British Raj into India and Pakistan",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "10d73f20bd7820a79a678ce6f888c2dd3e26cb6456e267e75ffded97d1cc041c",
+      "needsOcr": false
+    },
+    {
+      "slug": "the-permanent-settlement-in-bengal-a-study-of-its-operation-1790-1819-sirajul-is",
+      "title": "The Permanent Settlement in Bengal a Study of Its Operation 1790 1819 (sirajul Islam)",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/The permanent settlement in Bengal a study of its operation 1790-1819 (Sirajul Islam).pdf",
+      "sizeMb": 7.71,
+      "pageCount": 304,
+      "description": "The Permanent Settlement in Bengal a Study of Its Operation 1790 1819 (sirajul Islam).",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "bd81cee1116d01cfb915abaa3fa780d9bae037943cf316ad1ad13bfc1d889588",
+      "needsOcr": false
+    },
+    {
+      "slug": "this-book-is-from-amarboi-com",
+      "title": "This Book Is from Amarboi.com",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "amarboi-com",
+      "category": null,
+      "object": "books/অন্ধকারের-একশ-বছর.pdf",
+      "sizeMb": 4.26,
+      "pageCount": 96,
+      "description": "This Book Is from Amarboi.com by Amarboi.com.",
+      "tags": [
+        "amarboi-com"
+      ],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "f784fb5a4da1e6c7e1c3b6e70d2d3f0b6259e640508cc2e4aa5b87901323eb6b",
+      "needsOcr": true
+    },
+    {
+      "slug": "this-book-is-from-amarboi-com-2",
+      "title": "This Book Is from Amarboi.com",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "amarboi-com",
+      "category": null,
+      "object": "books/আমার অবিশ্বাস - হুমায়ুন আজাদ.pdf",
+      "sizeMb": 6.75,
+      "pageCount": 151,
+      "description": "This Book Is from Amarboi.com by Amarboi.com.",
+      "tags": [
+        "amarboi-com"
+      ],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "38fded269a5727adecfca974b489ac6fb3c515283ba2b87b013a85b0b5a1f77e",
+      "needsOcr": true
+    },
+    {
+      "slug": "www-banglabook-org",
+      "title": "Www.banglabook.org",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "www-banglabook-org",
+      "category": null,
+      "object": "books/চাঁদের অমাবস্যা-সৈয়দ ওয়ালীউল্লাহ.pdf",
+      "sizeMb": 3.28,
+      "pageCount": 79,
+      "description": "Www.banglabook.org by Www.banglabook.org.",
+      "tags": [
+        "www-banglabook-org"
+      ],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "56a822102f45ee5e730c70d6209d5c945030c9041db839b7826d5b32026f03a3",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-3b404418",
+      "title": "আওয়ামী লীগঃ উত্থান পর্ব ১৯৪৮ ১৯৭০ মহিউদ্দিন আহমদ",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/আওয়ামী লীগঃ উত্থান পর্ব - ১৯৪৮-১৯৭০ - মহিউদ্দিন আহমদ.pdf",
+      "sizeMb": 13.49,
+      "pageCount": 271,
+      "description": "আওয়ামী লীগঃ উত্থান পর্ব ১৯৪৮ ১৯৭০ মহিউদ্দিন আহমদ.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "b1b3f8ce506674c21c8fb9ba42ab63b88e8da316d25236d89b17d0a099d86990",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-2ceb7b48",
+      "title": "আত্মকথা ১৯৭১ নির্মলেন্দু গুণ",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/আত্মকথা ১৯৭১ নির্মলেন্দু গুণ.pdf",
+      "sizeMb": 13.11,
+      "pageCount": 281,
+      "description": "আত্মকথা ১৯৭১ নির্মলেন্দু গুণ.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "892dee742dd60cf05d0a3ba31252b6d3db520a507b16efeb0d37369ddf6825ce",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-4a428b23",
+      "title": "আমরা কি এই বাংলাদেশ চেয়েছিলাম হুমায়ুন আজাদ",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/আমরা কি এই বাংলাদেশ চেয়েছিলাম - হুমায়ুন আজাদ.pdf",
+      "sizeMb": 16,
+      "pageCount": 118,
+      "description": "আমরা কি এই বাংলাদেশ চেয়েছিলাম হুমায়ুন আজাদ.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "b20dbacb81a8f8b947ab54acaabde9589e6e104a9b8c1f74ecfe58a04c89ca74",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-0ab4d2e6",
+      "title": "আমা বীরঙ্গনা বলছি নীলিমা ইব্রাহিম",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/আমা বীরঙ্গনা বলছি - নীলিমা ইব্রাহিম.pdf",
+      "sizeMb": 4.57,
+      "pageCount": 155,
+      "description": "আমা বীরঙ্গনা বলছি নীলিমা ইব্রাহিম.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "79c280feb7684e439267201b7fcac304c667aba9992563abbfd65bef29699604",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-b047d8e2",
+      "title": "আমি নারী আমি মুক্তিযোদ্ধা সেলিনা হোসেন",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/আমি-নারী-আমি-মুক্তিযোদ্ধা-সেলিনা-হোসেন.pdf",
+      "sizeMb": 21.76,
+      "pageCount": 136,
+      "description": "আমি নারী আমি মুক্তিযোদ্ধা সেলিনা হোসেন.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "2d55a9179d1cd2eb7b7c56aa29c0ba1db4ef0311eaf65073dde56d169204070f",
+      "needsOcr": false
+    },
+    {
+      "slug": "book-8470a498",
+      "title": "ইতিহাসের খেরোখাতা",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/ইতিহাসের খেরোখাতা.pdf",
+      "sizeMb": 10.87,
+      "pageCount": 259,
+      "description": "ইতিহাসের খেরোখাতা.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "43bba9308a579ab4e4c8a0fca63df96685ae13d4e35f6efb9f6bfb1650d6f709",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-10e733ea",
+      "title": "ঈশ্বর, সৃষ্টি ও ধর্ম সাদ উল্লাহ",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/ঈশ্বর, সৃষ্টি ও ধর্ম - সাদ উল্লাহ.pdf",
+      "sizeMb": 8.41,
+      "pageCount": 163,
+      "description": "ঈশ্বর, সৃষ্টি ও ধর্ম সাদ উল্লাহ.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "47b8e1367e3b9f7639d386da7aa20cf9ed641892cdc126faba1f7b08ebb01da2",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-e83360b5",
+      "title": "একলা চলো তসলিমা নাসরিন",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/একলা চলো - তসলিমা নাসরিন.pdf",
+      "sizeMb": 7.63,
+      "pageCount": 218,
+      "description": "একলা চলো তসলিমা নাসরিন.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "04363088259801e1713250d7c2e2bb48723547e0de52114afba7b6ce6839d213",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-3019e62e",
+      "title": "জঙ্গিবাদঃ বাংলাদেশ কেন টার্গেট",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "writer-ffb83375",
+      "category": null,
+      "object": "books/জঙ্গিবাদঃ বাংলাদেশ কেন টার্গেট.pdf",
+      "sizeMb": 5.79,
+      "pageCount": 168,
+      "description": "জঙ্গিবাদঃ বাংলাদেশ কেন টার্গেট by মেহেদী হাসান পলাশ.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "8c36a15e5514995c5d710a9fec40323964a41910c9e7398eeb8dd362a68d7cce",
       "needsOcr": false
     },
     {
@@ -448,6 +809,24 @@
       "rights": "See source",
       "sha256": "704fcf1b8a65c617788db064a120d2d9fb23a8da40d345b104c4100a731994f8",
       "needsOcr": false
+    },
+    {
+      "slug": "book-37441d21",
+      "title": "বাংলার বাউল সুফি সাধনা ও সংগীত",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/বাংলার বাউল সুফি সাধনা ও সংগীত.pdf",
+      "sizeMb": 15.56,
+      "pageCount": 225,
+      "description": "বাংলার বাউল সুফি সাধনা ও সংগীত.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "65d7370d1ebaa1b86dc94a64c4ac9f3e21add6a2f7cecf98fa8c30cefaf84395",
+      "needsOcr": true
     }
   ]
 }

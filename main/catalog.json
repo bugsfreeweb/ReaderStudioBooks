@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T17:37:30.076Z",
+  "generatedAt": "2026-10-04T09:00:53.332Z",
   "categories": [
     {
       "slug": "liberation-war",
@@ -119,6 +119,60 @@
       "featured": false,
       "rights": "Personal library copy",
       "sha256": "0851db8f16fe302da6654d341116ccc2e38f54b7cf4e7821605dbd496f4fd85d",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-33e3ce0e",
+      "title": "দীনবন্ধু জীবনী বঙ্কিমচন্দ্র চট্টোপাধ্যায়",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/দীনবন্ধু জীবনী- বঙ্কিমচন্দ্র চট্টোপাধ্যায়.PDF",
+      "sizeMb": 3.18,
+      "pageCount": 54,
+      "description": "দীনবন্ধু জীবনী বঙ্কিমচন্দ্র চট্টোপাধ্যায়.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "2da31e7b6cae48e7e520da83538abcdc3547d1cca13336e1e6142b33a8eafbf6",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-6ef6796f",
+      "title": "দুর্গেশনন্দিনী বঙ্কিমচন্দ্র চট্টোপাধ্যায়",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/দুর্গেশনন্দিনী - বঙ্কিমচন্দ্র চট্টোপাধ্যায়.PDF",
+      "sizeMb": 10.44,
+      "pageCount": 174,
+      "description": "দুর্গেশনন্দিনী বঙ্কিমচন্দ্র চট্টোপাধ্যায়.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "2d96cc2e11d87a073773ea1835ccae5376073327218eb7c252755e31583600d4",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-a33d2bab",
+      "title": "দেয়াল হুমায়ূন আহমেদ",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/দেয়াল - হুমায়ূন আহমেদ.pdf",
+      "sizeMb": 3.99,
+      "pageCount": 195,
+      "description": "দেয়াল হুমায়ূন আহমেদ.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "f062bb80d851bf7df37c34def5f6396f433645f48a27c2c0232fcfcac46d84f6",
       "needsOcr": true
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:48:07.743Z",
+  "generatedAt": "2026-10-16T19:19:07.499Z",
   "categories": [
     {
       "slug": "biography",
@@ -33,6 +33,14 @@
       "accent": "#2f7d6b"
     },
     {
+      "slug": "aug-2",
+      "name": "Aug 2",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#4a6fa5"
+    },
+    {
       "slug": "ibne-batutar-safarnama-travels-of-ibn-batuta",
       "name": "Ibne Batutar Safarnama || Travels of Ibn Batuta",
       "country": "",
@@ -47,6 +55,14 @@
       "era": "",
       "bio": "",
       "accent": "#8a4a6a"
+    },
+    {
+      "slug": "newsweek",
+      "name": "Newsweek",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#5a6a8a"
     },
     {
       "slug": "ragib-ahsan",
@@ -143,6 +159,14 @@
       "era": "",
       "bio": "",
       "accent": "#a5504a"
+    },
+    {
+      "slug": "writer-bfca71d4",
+      "name": "মওদুদ আহমদ",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#8a4a6a"
     },
     {
       "slug": "writer-1dd9edf7",
@@ -289,6 +313,42 @@
       "featured": false,
       "rights": "Personal library copy",
       "sha256": "0851db8f16fe302da6654d341116ccc2e38f54b7cf4e7821605dbd496f4fd85d",
+      "needsOcr": true
+    },
+    {
+      "slug": "prothom-alo-26-january-2008",
+      "title": "২১ শে আগস্ট Prothom Alo 26 January, 2008",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/২১ শে আগস্ট-Prothom Alo-26 January, 2008.pdf",
+      "sizeMb": 0.47,
+      "pageCount": 2,
+      "description": "২১ শে আগস্ট Prothom Alo 26 January, 2008.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "6958e2a4a8633d2c3a7f51f9f7f9585211474ce4696c88c29e377c967c4d5150",
+      "needsOcr": true
+    },
+    {
+      "slug": "bengal-the-murder-of-a-people",
+      "title": "Bengal-the Murder of a People",
+      "subtitle": "",
+      "year": 1971,
+      "language": "en",
+      "writer": "newsweek",
+      "category": null,
+      "object": "books/Bengal-The Murder Of A People (Newsweek, Aug 2, 1971).pdf",
+      "sizeMb": 3.08,
+      "pageCount": 6,
+      "description": "Bengal-the Murder of a People by Newsweek.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "5fa6187ed62efe84d7ab0d73aac9bbc3befb94da20637faaf55ea79642947d6a",
       "needsOcr": true
     },
     {
@@ -459,6 +519,26 @@
       "featured": false,
       "rights": "See source",
       "sha256": "38fded269a5727adecfca974b489ac6fb3c515283ba2b87b013a85b0b5a1f77e",
+      "needsOcr": true
+    },
+    {
+      "slug": "this-book-is-from-amarboi-com-3",
+      "title": "This Book Is from Amarboi.com",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "amarboi-com",
+      "category": null,
+      "object": "books/রক্ষী বাহিনীর সত্য-মিথ্যা.pdf",
+      "sizeMb": 10.97,
+      "pageCount": 247,
+      "description": "This Book Is from Amarboi.com by Amarboi.com.",
+      "tags": [
+        "amarboi-com"
+      ],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "9ee5cdc337a24575ef5981d7727cfa88d8407c8e993e6403c933fe48f3e01aae",
       "needsOcr": true
     },
     {
@@ -968,6 +1048,24 @@
       "needsOcr": false
     },
     {
+      "slug": "book-f3c2593d",
+      "title": "বাংলাদেশঃ শেখ মুজিবর রহমানের শাসনকাল",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "writer-bfca71d4",
+      "category": null,
+      "object": "books/শেখ মুজিবের শাসনকাল - মওদুদ আহমদ.pdf",
+      "sizeMb": 11.13,
+      "pageCount": 411,
+      "description": "বাংলাদেশঃ শেখ মুজিবর রহমানের শাসনকাল by মওদুদ আহমদ.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "8c5f15a37f1f74fcca27cad820ca0532a5f5bfa6d7cfa03fd97eb58eafa1d2cb",
+      "needsOcr": false
+    },
+    {
       "slug": "book-37441d21",
       "title": "বাংলার বাউল সুফি সাধনা ও সংগীত",
       "subtitle": "",
@@ -983,6 +1081,24 @@
       "featured": false,
       "rights": "See source",
       "sha256": "65d7370d1ebaa1b86dc94a64c4ac9f3e21add6a2f7cecf98fa8c30cefaf84395",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-ee333b2e",
+      "title": "শেখ মুজিব, তাঁকে যেমন দেখেছি আবুল ফজল",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/শেখ মুজিব, তাঁকে যেমন দেখেছি - আবুল ফজল.pdf",
+      "sizeMb": 10.88,
+      "pageCount": 115,
+      "description": "শেখ মুজিব, তাঁকে যেমন দেখেছি আবুল ফজল.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "a75b3368c6fae1a5da652ad9d7067bed70e58b94e2db5862a5c189d464bd8432",
       "needsOcr": true
     },
     {
@@ -1002,6 +1118,60 @@
       "rights": "See source",
       "sha256": "ea73c9a93d17bc30f54df0f8694e7bec4db6e544fec11627e4b2dc642aa30107",
       "needsOcr": false
+    },
+    {
+      "slug": "book-b8c5b6b0",
+      "title": "সশস্ত্র বাহিনীতে গণহত্যা, ১৯৭৫ ১৯৮১",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/সশস্ত্র বাহিনীতে গণহত্যা, ১৯৭৫-১৯৮১.pdf",
+      "sizeMb": 22.95,
+      "pageCount": 222,
+      "description": "সশস্ত্র বাহিনীতে গণহত্যা, ১৯৭৫ ১৯৮১.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "72d8e35f2c030bf42370a783f98de53275b5b7982ae486419290029f9980010c",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-563d39f3",
+      "title": "সাঈদীকে নিয়ে আসিফ নজরুলের লেখা, ১০ ফেব্রুয়ারি ১৯৮৯ সাপ্তাহিক বিচিত্রা",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/সাঈদীকে নিয়ে আসিফ নজরুলের লেখা, ১০-ফেব্রুয়ারি-১৯৮৯-সাপ্তাহিক বিচিত্রা.pdf",
+      "sizeMb": 18.79,
+      "pageCount": 5,
+      "description": "সাঈদীকে নিয়ে আসিফ নজরুলের লেখা, ১০ ফেব্রুয়ারি ১৯৮৯ সাপ্তাহিক বিচিত্রা.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "7f22428351acafa172c74490deb08f2a8481334d5155db69d4e84879e65e8f3a",
+      "needsOcr": true
+    },
+    {
+      "slug": "who-killed-mujib",
+      "title": "হু কিল্ড মুজিব (who Killed Mujib) এ.এল.খতিব",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "writer-1dd9edf7",
+      "category": null,
+      "object": "books/হু কিল্ড মুজিব (Who Killed Mujib) - এ.এল.খতিব.pdf",
+      "sizeMb": 6.99,
+      "pageCount": 260,
+      "description": "হু কিল্ড মুজিব (who Killed Mujib) এ.এল.খতিব by মুক্তিযুদ্ধ ই-আর্কাইভ.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "927edff0d11c2ed5738286797bd6f78ad142ed3e5547eff82f2f0e590de61f96",
+      "needsOcr": true
     }
   ]
 }

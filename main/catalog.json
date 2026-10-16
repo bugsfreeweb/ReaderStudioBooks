@@ -1,6 +1,13 @@
 {
-  "generatedAt": "2026-10-04T09:58:54.358Z",
+  "generatedAt": "2026-10-16T18:48:07.743Z",
   "categories": [
+    {
+      "slug": "biography",
+      "name": "Biography",
+      "icon": "user-round",
+      "accent": "#2f7d6b",
+      "description": "Lives told whole."
+    },
     {
       "slug": "history",
       "name": "History",
@@ -34,12 +41,52 @@
       "accent": "#4a7d3f"
     },
     {
+      "slug": "murtad-masud",
+      "name": "Murtad Masud",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#8a4a6a"
+    },
+    {
+      "slug": "ragib-ahsan",
+      "name": "Ragib Ahsan",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#4a7d3f"
+    },
+    {
       "slug": "rubel",
       "name": "Rubel",
       "country": "",
       "era": "",
       "bio": "",
       "accent": "#8a4a6a"
+    },
+    {
+      "slug": "sheikh-mujibur-rahman",
+      "name": "Sheikh Mujibur Rahman",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#4a7d3f"
+    },
+    {
+      "slug": "shuvro-sarkar",
+      "name": "Shuvro Sarkar",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#8a6a2a"
+    },
+    {
+      "slug": "sufian-latif",
+      "name": "Sufian Latif",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#7a5aa5"
     },
     {
       "slug": "www-banglabook-org",
@@ -114,6 +161,14 @@
       "accent": "#8a4a6a"
     },
     {
+      "slug": "writer-3048ac9c",
+      "name": "শেখ মুজিবুর রহমান",
+      "country": "",
+      "era": "",
+      "bio": "",
+      "accent": "#5a6a8a"
+    },
+    {
       "slug": "saiduzzaman-raushan",
       "name": "সাইদুজ্জামান রওশন",
       "country": "Bangladesh",
@@ -139,6 +194,16 @@
       "accent": "#a5504a",
       "bookSlugs": [
         "the-great-partition"
+      ]
+    },
+    {
+      "slug": "biography",
+      "name": "Biography",
+      "kind": "category",
+      "description": "Lives told whole.",
+      "accent": "#2f7d6b",
+      "bookSlugs": [
+        "the-unfinished-memoirs"
       ]
     },
     {
@@ -225,6 +290,24 @@
       "rights": "Personal library copy",
       "sha256": "0851db8f16fe302da6654d341116ccc2e38f54b7cf4e7821605dbd496f4fd85d",
       "needsOcr": true
+    },
+    {
+      "slug": "c-g-ce",
+      "title": "C«_g Ce©",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "sufian-latif",
+      "category": null,
+      "object": "books/Sapiens.pdf",
+      "sizeMb": 6.39,
+      "pageCount": 623,
+      "description": "C«_g Ce© by Sufian Latif.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "babdac9dac5fead8aee8c39f785066986023ab61bab034fe2eeaf3acfe92905b",
+      "needsOcr": false
     },
     {
       "slug": "ibne-batutar-safarnama-bengali-translation-travels-of-ibn-batuta",
@@ -319,6 +402,26 @@
       "needsOcr": false
     },
     {
+      "slug": "the-unfinished-memoirs",
+      "title": "The Unfinished Memoirs",
+      "subtitle": "",
+      "year": 2012,
+      "language": "en",
+      "writer": "sheikh-mujibur-rahman",
+      "category": "biography",
+      "object": "books/The Unfinished Memories (Osomapto Atmojiboni English Version)- Bangabandhu Sheikh Mujibur Rahman Sheikh.pdf",
+      "sizeMb": 22.66,
+      "pageCount": 384,
+      "description": "The Unfinished Memoirs by Sheikh Mujibur Rahman.",
+      "tags": [
+        "https-archive-org-details-unfinishedmemoir0000shei"
+      ],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "d3ca4008e6dbc3c5f1a30a78ec0f4a7072b38f499cc234fa621fb10ac4fc4541",
+      "needsOcr": false
+    },
+    {
       "slug": "this-book-is-from-amarboi-com",
       "title": "This Book Is from Amarboi.com",
       "subtitle": "",
@@ -377,6 +480,24 @@
       "rights": "See source",
       "sha256": "56a822102f45ee5e730c70d6209d5c945030c9041db839b7826d5b32026f03a3",
       "needsOcr": true
+    },
+    {
+      "slug": "book-0513247d",
+      "title": "অসমাপ্ত আত্মজীবনী",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "writer-3048ac9c",
+      "category": null,
+      "object": "books/অসমাপ্ত আত্মজীবনী- বঙ্গবন্ধু শেখ মুজিবুর রহমান.pdf",
+      "sizeMb": 16.19,
+      "pageCount": 345,
+      "description": "অসমাপ্ত আত্মজীবনী by শেখ মুজিবুর রহমান.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "390c2a708e8bfe2d24130e293cc0cb22bfe08a6b49ac9ed211f97343174cc619",
+      "needsOcr": false
     },
     {
       "slug": "book-3b404418",
@@ -451,6 +572,24 @@
       "needsOcr": true
     },
     {
+      "slug": "book-29dd6657",
+      "title": "আমার দেখা নয়া চীন বঙ্গ শেখ মুজিবুর রহমান",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/আমার দেখা নয়া চীন- বঙ্গ শেখ মুজিবুর রহমান.pdf",
+      "sizeMb": 15.23,
+      "pageCount": 142,
+      "description": "আমার দেখা নয়া চীন বঙ্গ শেখ মুজিবুর রহমান.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "520fab9afdeccf0db3dd056c8d40d9a678c026c013ca59f1071d336c6e824057",
+      "needsOcr": false
+    },
+    {
       "slug": "book-b047d8e2",
       "title": "আমি নারী আমি মুক্তিযোদ্ধা সেলিনা হোসেন",
       "subtitle": "",
@@ -520,6 +659,24 @@
       "featured": false,
       "rights": "See source",
       "sha256": "04363088259801e1713250d7c2e2bb48723547e0de52114afba7b6ce6839d213",
+      "needsOcr": true
+    },
+    {
+      "slug": "book-478629b3",
+      "title": "কারাগারের রোজনামচা শেখ মুজিবুর রহমান",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "unknown",
+      "category": null,
+      "object": "books/কারাগারের রোজনামচা - শেখ মুজিবুর রহমান.pdf",
+      "sizeMb": 15.06,
+      "pageCount": 333,
+      "description": "কারাগারের রোজনামচা শেখ মুজিবুর রহমান.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "59329e1da1f94ab17509c58c7d513831682d399f412dd3d58502545ae79120dd",
       "needsOcr": true
     },
     {
@@ -827,6 +984,24 @@
       "rights": "See source",
       "sha256": "65d7370d1ebaa1b86dc94a64c4ac9f3e21add6a2f7cecf98fa8c30cefaf84395",
       "needsOcr": true
+    },
+    {
+      "slug": "book-01c12c42",
+      "title": "সবটুকুই মুহাম্মদ বাংলা অনুবাদ",
+      "subtitle": "",
+      "year": 0,
+      "language": "en",
+      "writer": "murtad-masud",
+      "category": null,
+      "object": "books/সবটুকুই মুহাম্মদ-বাংলা অনুবাদ.pdf",
+      "sizeMb": 6.43,
+      "pageCount": 394,
+      "description": "সবটুকুই মুহাম্মদ বাংলা অনুবাদ by Murtad Masud.",
+      "tags": [],
+      "featured": false,
+      "rights": "See source",
+      "sha256": "ea73c9a93d17bc30f54df0f8694e7bec4db6e544fec11627e4b2dc642aa30107",
+      "needsOcr": false
     }
   ]
 }

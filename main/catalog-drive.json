@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T19:23:22.335Z",
+  "generatedAt": "2026-10-17T09:36:04.663Z",
   "books": [
     {
       "slug": "drive-গণহত্যা-বধ্যভূমি-ও-গণকবর-জরিপ-যশোর-জেলা-0",
@@ -19,7 +19,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-গণহত্যা-বধ্যভূমি-ও-গণকবর-জরিপ-যশোর-জেলা-1",
@@ -39,7 +39,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-রহস্যময়-অভ্যুত্থান-ও-গণফাঁসি-জায়েদুল-আহসান-2",
@@ -59,7 +59,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-লক্ষ-প্রাণের-বিনিময়ে-এ-টেল-অব-মিলিয়নস-রফিকুল-ইসলাম-পিএসসি-3",
@@ -79,7 +79,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-একাত্তরের-মুক্তিযুদ্ধ-রক্তাক্ত-মধ্য-আগস্ট-ও-ষড়যন্ত্রময়-নভেম্-4",
@@ -99,7 +99,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-galposamagro-01-bibhutibhusan-5",
@@ -119,7 +119,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-ওয়ান-ইলেভেন-কী-কেন-কীভাবে-আখতারুজ্জামান-আজাদ-6",
@@ -139,7 +139,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-ektukhani-biggan-by-muhammad-zafar-iqbal-7",
@@ -159,7 +159,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-ইছামতী-বিভূতিভূষণ-বন্দ্যোপাধ্যায়-8",
@@ -179,7 +179,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-কৃষ্ণকান্তের-উইল-বঙ্কিমচন্দ্র-চট্টোপাধ্যায়-9",
@@ -199,7 +199,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-দুর্গেশনন্দিনী-বঙ্কিমচন্দ্র-চট্টোপাধ্যায়-10",
@@ -219,7 +219,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-যারা-ভোর-এনেছিল-আনিসুল-হক-11",
@@ -239,7 +239,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বাঙালি-মুসলমানের-মন-আহমদ-ছফা-12",
@@ -259,7 +259,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-কাঁদো-নদী-কাঁদো-সৈয়দ-ওয়ালীউল্লাহ-13",
@@ -279,7 +279,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-সেপিয়েন্স-ইউভাল-নোহা-হারারি-14",
@@ -299,7 +299,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-তিতাস-একটি-নদীর-নাম-অদ্বৈত-মল্লবর্মণ-15",
@@ -319,7 +319,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-সংস্কৃতির-বিবর্তন-অন্নদাশঙ্কর-রায়-16",
@@ -339,7 +339,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-গণতন্ত্র-সংস্কৃতি-ও-স্বাতন্ত্র্য-বিচিত্র-চিন্তাভাবনা-17",
@@ -359,7 +359,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-গাভী-বিত্তান্ত-আহমদ-ছফা-18",
@@ -379,7 +379,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-আমি-বিজয়-দেখেছি-m-r-akhtar-mukul-19",
@@ -399,7 +399,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-আমার-অবিশ্বাস-হুমায়ুন-আজাদ-20",
@@ -419,7 +419,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-দীনবন্ধু-জীবনী-বঙ্কিমচন্দ্র-চট্টোপাধ্যায়-21",
@@ -439,7 +439,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বঙ্গদর্শন-বঙ্কিমচন্দ্র-চট্টোপাধ্যায়-22",
@@ -459,7 +459,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-কমলাকান্তের-দপ্তর-বঙ্কিমচন্দ্র-চট্টোপাধ্যায়-23",
@@ -479,7 +479,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-দুর্গেশনন্দিনী-বঙ্কিমচন্দ্র-চট্টোপাধ্যায়-24",
@@ -499,7 +499,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-চাঁদের-অমাবস্যা-সৈয়দ-ওয়ালীউল্লাহ-25",
@@ -519,7 +519,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বাংলা-সাময়িক-পত্রিকা-১৯৭২-১৯৮১-26",
@@ -539,7 +539,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বংশ-পরিচয়-১৬-খণ্ড-27",
@@ -559,7 +559,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-যশোহর-খুলনার-ইতিহাস-২য়-খণ্ড-28",
@@ -579,7 +579,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-মুজিবরের-বাংলা-পঙ্কজকুমার-29",
@@ -599,7 +599,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বংশ-পরিচয়-২য়-খণ্ড-30",
@@ -619,7 +619,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বংশ-পরিচয়-৩য়-খণ্ড-31",
@@ -639,7 +639,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বংশ-পরিচয়-৪র্থ-খণ্ড-32",
@@ -659,7 +659,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বিপুলা-পৃথিবী-আত্মজীবনী-আনিসুজ্জামান-33",
@@ -679,7 +679,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-একটি-বাঘের-কথা-34",
@@ -699,7 +699,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-দ্য-রেইপ-অব-বাংলাদেশ-হার্ডকভার-অ্যান্থনী-মাসকারেনহাস-মাহফুজ--35",
@@ -719,7 +719,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-আমি-নারী-আমি-মুক্তিযোদ্ধা-সেলিনা-হোসেন-36",
@@ -739,7 +739,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-এক-পরাশক্তির-অন্যায়-যুদ্ধ-আতঙ্কিত-করেছে-বিশ্বের-মানুষকে-মাও-37",
@@ -759,7 +759,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-পুতুল-নাচের-ইতিকথা-মানিক-বন্দ্যোপাধ্যায়-putul-nacher-itikat-38",
@@ -779,7 +779,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-লালসালু-সৈয়দ-ওয়ালীউল্লাহ-lalsalu-by-syed-waliullah-39",
@@ -799,7 +799,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-হাঙর-নদী-গ্রেনেড-সেলিনা-হোসেন-hangor-nodi-grenade-by-selina--40",
@@ -819,7 +819,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-হাজার-বছর-ধরে-জহির-রায়হান-hajar-bachhor-dhore-by-zahir-raih-41",
@@ -839,7 +839,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-জজ-মিয়া-দ্য-বুমেরাং-আখতারুজ্জামান-আজাদ-42",
@@ -859,7 +859,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-সাঈদীকে-নিয়ে-আসিফ-নজরুলের-লেখা-১০-ফেব্রুয়ারি-১৯৮৯-সাপ্তাহিক--43",
@@ -879,7 +879,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-২১-শে-আগস্ট-prothom-alo-26-january-2008-44",
@@ -899,7 +899,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-bengal-the-murder-of-a-people-newsweek-aug-2-1971-45",
@@ -919,7 +919,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-ছোটদের-মুক্তিযুদ্ধের-ইতিহাস-মুহম্মদ-জাফর-ইকবাল-46",
@@ -939,7 +939,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-bangladesh-a-brutal-birth-by-kishor-parekh-47",
@@ -959,7 +959,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-পাক-সার-জমিন-সাদ-বাদ-48",
@@ -979,7 +979,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বঙ্গবন্ধু-বেঁচে-থাকলে-বাংলাদেশের-অর্থনীতি-সমাজ-আজ-কোথায়-দাঁ-49",
@@ -999,7 +999,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-আওয়ামী-লীগঃ-যুদ্ধ-দিনের-কথা-১৯৭১-মহিউদ্দিন-আহমদ-50",
@@ -1019,7 +1019,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বাংলাদেশের-মুক্তিযুদ্ধে-ভারতের-ভূমিকা-বিমল-প্রামাণিক-51",
@@ -1039,7 +1039,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বাংলাদেশের-মুক্তিযুদ্ধে-এডওয়ার্ড-কেনেডি-ও-আমেরিকার-ভূমিকা-ত-52",
@@ -1059,7 +1059,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বিএনপি-জামাতের-নির্যাতন-এবং-অপরাধ-থেকে-দায়মুক্তির-সংস্কৃতি--53",
@@ -1079,7 +1079,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-শহীদ-জননীর-আন্দোলনের-১৫-বছর-শাহরিয়ার-কবির-একাত্তরের-ঘাতক-দাল-54",
@@ -1099,7 +1099,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-লোকসঙ্গীত-মুহম্মদ-নুরুল-হুদা-55",
@@ -1119,7 +1119,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-সংসদে-যা-বলেছি-মওদুদ-আহমদ-56",
@@ -1139,7 +1139,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-সংবিধান-গণপ্রজাতন্ত্রী-বাংলাদেশ-সরকার-57",
@@ -1159,7 +1159,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-দেয়াল-হুমায়ূন-আহমেদ-58",
@@ -1179,7 +1179,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-জোছনা-ও-জননীর-গল্প-হুমায়ুন-আহমেদ-59",
@@ -1199,7 +1199,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-নন্দিত-নরকে-হুমায়ুন-আহমেদ-60",
@@ -1219,7 +1219,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-মেঘ-বলেছে-যাব-যাব-হুমায়ূন-আহমেদ-61",
@@ -1239,7 +1239,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-১৯৭১-হুমায়ূন-আহমেদ-62",
@@ -1259,7 +1259,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-চিলেকোঠার-সেপাই-আখতারুজ্জামান-ইলিয়াস-63",
@@ -1279,7 +1279,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-আমার-বন্ধু-রাশেদ-মুহাম্মদ-জাফর-ইকবাল-64",
@@ -1299,7 +1299,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-উইটনেস-টু-সারেন্ডার-সিদ্দিক-সালিক-65",
@@ -1319,7 +1319,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-ক্রাচের-কর্নেল-66",
@@ -1339,7 +1339,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-দ্য-প্রিন্স-ম্যাকিয়াভেলি-67",
@@ -1359,7 +1359,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-মুহাম্মদ-মহানবী-সাঃ-জীবনী-ক্যারেন-আর্মস্ট্রং-68",
@@ -1379,7 +1379,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-সবটুকুই-মুহাম্মদ-অনুবাদ-সাফিয়া-বিনতে-হুয়াই-মুফতি-আব্দুল্লাহ--69",
@@ -1399,7 +1399,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-রবীন্দ্রনাথের-ধর্মতত্ত্ব-ও-দর্শন-70",
@@ -1419,7 +1419,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-পাকিস্তানি-জেনারেলদের-মন-muntasir-mamun-71",
@@ -1439,7 +1439,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-অরক্ষিত-স্বাধীনতাই-পরাধীনতা-72",
@@ -1459,7 +1459,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-অপারেশন-জ্যাকপট-সেজান-মাহমুদ-73",
@@ -1479,7 +1479,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-নুরুলদীনের-সারা-জীবন-সৈয়দ-শামসুল-হক-74",
@@ -1499,7 +1499,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-নারী-ও-মৌলবাদ-75",
@@ -1519,7 +1519,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-মূলধারা-৭১-মঈদুল-হাসান-76",
@@ -1539,7 +1539,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-মুক্তিযুদ্ধের-পূর্বাপর-কথোপকথন-77",
@@ -1559,7 +1559,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-মুক্তিযুদ্ধে-দৈনিক-সংগ্রামের-ভূমিকা-আলী-আকবর-টাবী-78",
@@ -1579,7 +1579,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-মুক্তিযুদ্ধে-ছাত্রলীগ-ও-বাংলাদেশ-লিবারেশন-ফোর্স-79",
@@ -1599,7 +1599,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-মুক্তিযুদ্ধ-ও-বঙ্গবন্ধুকে-ঘিরে-সিক্রেট-ডকুমেন্ট-80",
@@ -1619,7 +1619,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-কত-নদী-সরোবর-হুমায়ুন-আজাদ-81",
@@ -1639,7 +1639,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-জাসদের-রাজনীতি-82",
@@ -1659,7 +1659,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-যদ্যপি-আমার-গুরু-আহমদ-ছফা-83",
@@ -1679,7 +1679,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-যশোবন্ত-সিংহ-জিন্না-84",
@@ -1699,7 +1699,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-জেরুজালেম-ইতিহাস-85",
@@ -1719,7 +1719,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-জামাতের-আসল-চরিত্র-মওলানা-আব্দুল-আউয়াল-86",
@@ -1739,7 +1739,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-গেরিলা-থেকে-সম্মুখযুদ্ধে-প্রথম-খন্ড-মাহবুব-আলম-87",
@@ -1759,7 +1759,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-একাত্তরের-ডায়েরী-বেগম-সুফিয়া-কামাল-88",
@@ -1779,7 +1779,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-একাত্তরের-বধ্যভূমি-ও-গণকবর-89",
@@ -1799,7 +1799,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-দোজখনামা-90",
@@ -1819,7 +1819,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-দেশ-বিভাগ-ভবানীপ্রসাদ-91",
@@ -1839,7 +1839,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-কমিউনিজম-কী-92",
@@ -1859,7 +1859,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-চরমপত্র-93",
@@ -1879,7 +1879,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-ব্যক্তিত্ব-কী-94",
@@ -1899,7 +1899,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বাংলার-বাউল-সুফি-সাধনা-ও-সংগীত-95",
@@ -1919,7 +1919,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বাংলা-ভাইয়ের-রাজত্বে-96",
@@ -1939,7 +1939,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বাঙলা-ভাগ-হলো-97",
@@ -1959,7 +1959,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বাঙ্গাল-নামা-তপন-রায়-98",
@@ -1979,7 +1979,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-জর্জ-অরওয়েলের-অ্যানিম্যাল-ফার্ম-99",
@@ -1999,7 +1999,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বাঙ্গালীর-ইতিহাস-আদি-পর্ব-100",
@@ -2019,7 +2019,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     },
     {
       "slug": "drive-বামপন্থী-রাজনীতি-ও-বাংলাদেশের-অভ্যুদয়-101",
@@ -2039,7 +2039,7 @@
       "featured": false,
       "rights": "Drive library copy",
       "sha256": "",
-      "needsOcr": false
+      "needsOcr": true
     }
   ],
   "writers": [
